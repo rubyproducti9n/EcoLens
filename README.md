@@ -19,3 +19,15 @@ CarbonLens helps users understand, log, and reduce their lifestyle emissions thr
 
 ## Tech Stack
 Pure HTML5, CSS3, Vanilla JS — zero dependencies, zero build tools
+
+## Testing
+Run the test suite locally with:
+```bash
+node tests.js
+```
+Tests cover: transport/energy/food/shopping emission calculations, sustainability score,
+status label thresholds, localStorage safe-parse, and input clamping.
+All calculation functions are pure (no side effects) and tested in isolation.
+
+Verify: node tests.js prints all ✅ and exits with code 0.
+
